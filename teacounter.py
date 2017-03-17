@@ -10,6 +10,7 @@ teateas=[]
 def clearteateas():
     global teateas
     teateas=[]
+    return "list cleared"
 
 schedule.every().day.at("03:30").do(clearteateas)
 schedule.every().day.at("09:00").do(clearteateas)
