@@ -10,9 +10,12 @@ setup(
     author='Aniket patel',
     author_email='patelaniket@gmail.com',
     url='http://github.com/kodani/teacounter',
-    packages=['teacounter'],
     scripts=[
-    'teacount.py'
+    'tea.py'
+    ],
+    install_requires=[
+       'requests',
+       'fire',
     ],
     keywords=['tea count'],
     classifiers=[

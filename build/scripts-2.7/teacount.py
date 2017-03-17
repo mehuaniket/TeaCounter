@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import fire
 from requests import get
 from json import loads
@@ -14,10 +15,16 @@ def listtea():
     print "total cups of tea =>",len(tea)
     return
 
+def clear():
+    teal = get('http://localhost:5000/clear')
+    print "list cleared"
+    return
+
 
 
 if __name__ == '__main__':
    fire.Fire({
       'countme': countme,
       'listtea': listtea,
+      'clear':clear
   })
