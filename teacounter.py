@@ -6,14 +6,18 @@ import time
 app = Flask(__name__)
 
 teateas=[]
-@app.route('/clear')
 def clearteateas():
     global teateas
     teateas=[]
-    return "list cleared"
+    return
 
 schedule.every().day.at("03:30").do(clearteateas)
 schedule.every().day.at("09:00").do(clearteateas)
+@app.route('/clear')
+def clear():
+    global teateas
+    teateas=[]
+    return "list cleared"
 
 @app.route('/countme/<name>')
 def countme(name):
