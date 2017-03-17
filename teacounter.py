@@ -6,7 +6,7 @@ import time
 app = Flask(__name__)
 
 teateas=[]
-
+@app.route('/clear')
 def clearteateas():
     global teateas
     teateas=[]
