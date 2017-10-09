@@ -1,0 +1,10 @@
+#!/bin/bash
+
+/usr/bin/python ./get-pip.py
+pip install virtualenv
+virtualenv venv
+source ./venv/bin/activate
+pip install flask
+pip install flask-bootstrap
+pip install boto
+pip install fire

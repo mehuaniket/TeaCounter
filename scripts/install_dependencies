@@ -1,0 +1,3 @@
+#!/bin/bash
+apt-get -q -y install python-dev
+a2enmod wsgi

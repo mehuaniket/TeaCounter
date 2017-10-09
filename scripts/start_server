@@ -1,0 +1,7 @@
+#!/bin/bash
+
+python -m flask run
+
+#set -m
+#cd /opt/magic8ball-0.1/
+#nohup ./magic8ball.py > /dev/null 2>&1 &
