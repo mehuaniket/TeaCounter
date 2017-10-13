@@ -1,5 +1,7 @@
 version: 0.0
 os: linux
+  - source: /
+    destination: /home/ubuntu/code-deploy
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
